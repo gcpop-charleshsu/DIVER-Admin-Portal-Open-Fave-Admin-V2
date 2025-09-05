@@ -1,0 +1,44 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 64,
+  "boxShadow": "none",
+  "defaultImage": "{{iconFilePicker.files[0] ? iconFilePicker.files[0].data : getToken.data.coin_image}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultImage"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "enableDownload": false,
+  "enableRotation": false,
+  "flexVerticalAlignment": "start",
+  "image": "",
+  "imageShape": "RECTANGLE",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "1xpkr09vyj",
+  "leftColumn": 27,
+  "maxZoomLevel": 1,
+  "mobileBottomRow": 67,
+  "mobileLeftColumn": 10,
+  "mobileRightColumn": 22,
+  "mobileTopRow": 55,
+  "needsErrorInfo": false,
+  "objectFit": "cover",
+  "originalBottomRow": 64,
+  "originalTopRow": 52,
+  "parentColumnSpace": 16.701171875,
+  "parentId": "lbturmmx8r",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 39,
+  "topRow": 52,
+  "type": "IMAGE_WIDGET",
+  "version": 1,
+  "widgetId": "tb8vcgzbks",
+  "widgetName": "Image1"
+}

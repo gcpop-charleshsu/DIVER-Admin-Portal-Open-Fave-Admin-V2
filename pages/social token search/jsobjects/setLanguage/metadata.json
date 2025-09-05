@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "68b6a5f1ec8af07165cbba50_07e485c4-0930-4944-a3d5-77bc9d150ccb",
+  "id": "social token search_setLanguage",
+  "unpublishedCollection": {
+    "name": "setLanguage",
+    "pageId": "social token search",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "langList",
+        "value": "[{\n  display: \"English\",\n  value: \"English\"\n}, {\n  display: \"Chinese\",\n  value: \"Chinese\"\n}, {\n  display: \"Janpanese\",\n  value: \"Janpanese\"\n}]"
+      }
+    ]
+  }
+}

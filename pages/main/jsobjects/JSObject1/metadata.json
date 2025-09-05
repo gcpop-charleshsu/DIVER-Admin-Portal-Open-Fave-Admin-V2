@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "68b6a5f1ec8af07165cbba50_f3b1aaa1-341b-46db-b0e4-269ebda16f3b",
+  "id": "main_JSObject1",
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "main",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "langList",
+        "value": "[{\n  display: \"English\",\n  value: \"English\"\n}, {\n  display: \"Chinese\",\n  value: \"Chinese\"\n}, {\n  display: \"Janpanese\",\n  value: \"Janpanese\"\n}]"
+      }
+    ]
+  }
+}

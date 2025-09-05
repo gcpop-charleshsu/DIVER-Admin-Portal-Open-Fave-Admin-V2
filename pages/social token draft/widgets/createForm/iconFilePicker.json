@@ -1,0 +1,56 @@
+{
+  "allowedFileTypes": [
+    "image/*",
+    "image/jpeg",
+    ".png"
+  ],
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 58,
+  "boxShadow": "none",
+  "buttonColor": "#22c55e",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onFilesSelected"
+    }
+  ],
+  "dynamicTyping": true,
+  "fileDataType": "Base64",
+  "files": [],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "qzhllnf8ai",
+  "label": "Upload Icon",
+  "leftColumn": 40,
+  "maxFileSize": "5",
+  "maxNumFiles": 1,
+  "minWidth": 120,
+  "mobileBottomRow": 60,
+  "mobileLeftColumn": 26,
+  "mobileRightColumn": 42,
+  "mobileTopRow": 56,
+  "needsErrorInfo": false,
+  "onFilesSelected": "{{buttonSubmit.uploadIcon();}}",
+  "originalBottomRow": 58,
+  "originalTopRow": 54,
+  "parentColumnSpace": 16.701171875,
+  "parentId": "lbturmmx8r",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 48,
+  "selectedFiles": [],
+  "topRow": 54,
+  "type": "FILE_PICKER_WIDGET_V2",
+  "version": 1,
+  "widgetId": "scubtiz19r",
+  "widgetName": "iconFilePicker"
+}

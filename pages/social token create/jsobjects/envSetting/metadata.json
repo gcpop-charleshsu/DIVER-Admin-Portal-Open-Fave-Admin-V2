@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "68b6a5f1ec8af07165cbba50_90bb2572-a98f-4a94-9b6d-dd927cd875ef",
+  "id": "social token create_envSetting",
+  "unpublishedCollection": {
+    "name": "envSetting",
+    "pageId": "social token create",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

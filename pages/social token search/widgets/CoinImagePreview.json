@@ -1,0 +1,44 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 67,
+  "boxShadow": "none",
+  "defaultImage": "{{token_list.selectedRow.coin_image}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultImage"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "enableDownload": false,
+  "enableRotation": false,
+  "flexVerticalAlignment": "start",
+  "image": "",
+  "imageShape": "RECTANGLE",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "ajm37exs5f",
+  "leftColumn": 1,
+  "maxZoomLevel": 1,
+  "mobileBottomRow": 42,
+  "mobileLeftColumn": 26,
+  "mobileRightColumn": 38,
+  "mobileTopRow": 30,
+  "needsErrorInfo": false,
+  "objectFit": "cover",
+  "originalBottomRow": 67,
+  "originalTopRow": 55,
+  "parentColumnSpace": 16.675,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 11,
+  "topRow": 55,
+  "type": "IMAGE_WIDGET",
+  "version": 1,
+  "widgetId": "ccj5ixtt1p",
+  "widgetName": "CoinImagePreview"
+}

@@ -1,0 +1,43 @@
+{
+  "auto_fill_enabled": {{Boolean(autoFillEnabled.selectedOptionValue)}},
+  "collateral_amt": {{Number(collateralAmt.text)}},
+  "collateral_symbol": {{collateralSymbol.selectedOptionValue}},
+  "creator_name": {{creatorName.text}},
+  "creator_wallet_address": {{creatorWalletAddress.text}},
+  "decimal_balance": {{Number(decimalBalance.text)}},
+  "decimal_fiat_balance": {{Number(decimalFiatBalance.text)}},
+  "decimal_on_chain": {{Number(decimalOnChain.text)}},
+  "decimal_price_change": {{Number(decimalPriceChange.text)}},
+  "decimal_quotation": {{Number(decimalQuotation.text)}},
+  "platform": {{platform.selectedOptionValue}},
+  "remint_enabled": {{Boolean(remintEnabled.selectedOptionValue)}},
+  "swap_allocation_percent": {{Number(swapAllocationPercent.text)}},
+  "swap_enabled": {{Boolean(swapEnabled.selectedOptionValue)}},
+  "swap_fee_rate": {{Number(swapFeeRate.text)}},
+  "swap_high_multiple_limit": {{Number(swapHighMultipleLimit.text)}},
+  "swap_low_limit_percent": {{Number(swapLowLimitPercent.text)}},
+  "token_allocations": [
+    {
+      "allocate_percent": {{Number(creatorAllocatePercent.text)}},
+      "is_generated_by_system": false,
+      "wallet_address": {{creatorWalletAddress.text}},
+      "wallet_type": "creator"
+    },
+		{
+      "allocate_percent": {{Number(agentAllocatePercent.text)}},
+      "is_generated_by_system": false,
+      "wallet_address": {{agentWalletAddress.text}},
+      "wallet_type": "agent"
+    },
+		{
+      "allocate_percent": {{Number(stockAllocatePercent.text)}},
+      "is_generated_by_system": false,
+      "wallet_address": {{stockWalletAddress.text}},
+      "wallet_type": "stock"
+    }
+  ],
+  "token_initial_supply": {{Number(tokenInitialSupply.text)}},
+  "token_name": {{tokenName.text}},
+  "token_symbol": {{tokenSymbol.text}},
+  "visibility": {{Boolean(visibility.selectedOptionValue)}},
+}

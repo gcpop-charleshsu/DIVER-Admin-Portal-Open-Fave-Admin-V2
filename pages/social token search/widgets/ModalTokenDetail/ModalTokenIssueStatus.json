@@ -1,0 +1,64 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 69,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( token_list.selectedRow.token_issue_status))(ModalTokenIssueStatus.options, ModalTokenIssueStatus.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": true,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "xpx55bbtur",
+  "labelAlignment": "left",
+  "labelPosition": "Left",
+  "labelText": "token_issue_status",
+  "labelTextSize": "0.875rem",
+  "labelWidth": "14",
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 55,
+  "mobileLeftColumn": 39,
+  "mobileRightColumn": 59,
+  "mobileTopRow": 48,
+  "needsErrorInfo": false,
+  "optionLabel": "name",
+  "optionValue": "value",
+  "originalBottomRow": 69,
+  "originalTopRow": 65,
+  "parentColumnSpace": 12.28125,
+  "parentId": "k6mnmq0kvc",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 26,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"name\": \"drafting\",\n    \"value\": \"drafting\"\n  },\n  {\n    \"name\": \"deploying\",\n    \"value\": \"deploying\"\n  },\n\t{\n    \"name\": \"deployed\",\n    \"value\": \"deployed\"\n  },\n\t{\n    \"name\": \"failed\",\n    \"value\": \"failed\"\n  },\n\t{\n    \"name\": \"deactivated\",\n    \"value\": \"deactivated\"\n  }\n]",
+  "topRow": 65,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "0m8du199si",
+  "widgetName": "ModalTokenIssueStatus"
+}

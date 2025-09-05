@@ -1,0 +1,60 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 83,
+  "boxShadow": "none",
+  "buttonColor": "#fde047",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": "{{token_list.selectedRow.token_symbol != \"\" && token_list.selectedRow.token_issue_status == \"drafting\" ? false : true}}",
+  "isLoading": false,
+  "isVisible": "true",
+  "key": "3drzc2v6r1",
+  "leftColumn": 1,
+  "minWidth": 120,
+  "mobileBottomRow": 83,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 13,
+  "mobileTopRow": 79,
+  "needsErrorInfo": false,
+  "onClick": "{{navigateTo('social token draft', {\n  \"tokenSymbol\": token_list.selectedRow.token_symbol\n}, 'SAME_WINDOW');}}",
+  "originalBottomRow": 83,
+  "originalTopRow": 77,
+  "parentColumnSpace": 17.5625,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 12,
+  "text": "Draft",
+  "topRow": 77,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "znzhzp0g4i",
+  "widgetName": "draftButton"
+}

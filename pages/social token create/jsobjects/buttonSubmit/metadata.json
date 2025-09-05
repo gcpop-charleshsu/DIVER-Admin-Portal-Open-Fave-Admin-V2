@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "68b6a5f1ec8af07165cbba50_ca3a8c91-c477-4f4b-bfdd-01526188fc5f",
+  "id": "social token create_buttonSubmit",
+  "unpublishedCollection": {
+    "name": "buttonSubmit",
+    "pageId": "social token create",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}
