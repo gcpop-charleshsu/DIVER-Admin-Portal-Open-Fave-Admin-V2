@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "68b6a5f1ec8af07165cbba50_9c29902c-9984-45cb-be87-3311fcb86068",
+  "id": "character info_setLanguage",
+  "unpublishedCollection": {
+    "name": "setLanguage",
+    "pageId": "character info",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "langList",
+        "value": "[{\n  display: \"English\",\n  value: \"English\"\n}, {\n  display: \"Chinese\",\n  value: \"Chinese\"\n}, {\n  display: \"Janpanese\",\n  value: \"Janpanese\"\n}]"
+      }
+    ]
+  }
+}

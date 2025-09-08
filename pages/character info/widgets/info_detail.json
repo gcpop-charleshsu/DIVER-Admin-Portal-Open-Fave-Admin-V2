@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 76,
+  "bottomRow": 66,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "PRIMARY",
@@ -19,9 +19,6 @@
   ],
   "dynamicPropertyPathList": [
     {
-      "key": "onClick"
-    },
-    {
       "key": "isDisabled"
     }
   ],
@@ -31,21 +28,21 @@
     }
   ],
   "isDefaultClickDisabled": true,
-  "isDisabled": "{{token_list.selectedRow.token_symbol != \"\" ? false : true}}",
+  "isDisabled": "{{character_info_list.selectedRow.id != \"\" ? false : true}}",
   "isLoading": false,
   "isVisible": true,
-  "key": "r65xtxqkzq",
-  "leftColumn": 1,
+  "key": "diqj9mmr4t",
+  "leftColumn": 3,
   "minWidth": 120,
-  "mobileBottomRow": 71,
-  "mobileLeftColumn": 0,
-  "mobileRightColumn": 16,
-  "mobileTopRow": 67,
+  "mobileBottomRow": 65,
+  "mobileLeftColumn": 3,
+  "mobileRightColumn": 19,
+  "mobileTopRow": 61,
   "needsErrorInfo": false,
-  "onClick": "{{showModal(ModalTokenDetail.name)}}",
-  "originalBottomRow": 76,
-  "originalTopRow": 70,
-  "parentColumnSpace": 44.3125,
+  "onClick": "{{showModal(ModalDetail.name);}}",
+  "originalBottomRow": 66,
+  "originalTopRow": 61,
+  "parentColumnSpace": 17.5625,
   "parentId": "0",
   "parentRowSpace": 10,
   "placement": "CENTER",
@@ -53,11 +50,11 @@
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 12,
-  "text": "Show Detail",
-  "topRow": 70,
+  "rightColumn": 19,
+  "text": "Detail",
+  "topRow": 61,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "jzpwezojan",
-  "widgetName": "ShowDetailButton"
+  "widgetId": "fa5n5vjr4y",
+  "widgetName": "info_detail"
 }
