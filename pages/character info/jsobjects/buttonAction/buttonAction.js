@@ -15,16 +15,28 @@ export default {
 		});
   },
 	UpdateSubmit() {
-		const html = ModalRichTE.text
-		// Preserve line breaks by converting <br> and </p> to newlines
-		let text = html.replace(/<br\s*\/?>/gi, '\n');
-		text = text.replace(/<\/p>/gi, '\n');
-		text = text.replace(/<\/div>/gi, '\n');
-		// Remove remaining HTML tags
-		text = text.replace(/<[^>]*>/g, '');
-		// Clean up multiple consecutive newlines
-		text = text.replace(/\n\n+/g, '\n\n').trim();
-		console.log(text);
+		const content = ModalRichTE.text;
+		let text = content;
+		
+		// Check if content is HTML (contains tags) or markdown
+		if (content.includes('<') && content.includes('>')) {
+			// HTML content - convert breaks to newlines
+			text = content
+				.replace(/<\/p>\s*<p[^>]*>/gi, '\n\n')  // Paragraph breaks
+				.replace(/<br\s*\/?>/gi, '\n')           // Line breaks
+				.replace(/<\/div>\s*<div[^>]*>/gi, '\n') // Div breaks
+				.replace(/<\/li>\s*<li[^>]*>/gi, '\n')   // List item breaks
+				.replace(/<[^>]*>/g, '')                 // Remove remaining tags
+				.replace(/&nbsp;/g, ' ')                 // Non-breaking spaces
+				.replace(/&lt;/g, '<')                   // HTML entities
+				.replace(/&gt;/g, '>')
+				.replace(/&amp;/g, '&')
+				.replace(/&quot;/g, '"')
+				.replace(/&#39;/g, "'");
+		}
+		// For markdown or plain text, preserve as-is
+		
+		console.log("Text to update:", text);
 
     update_info.run({context: text}).then(() => {
 			showAlert("Info update successfully!", "success");
@@ -39,16 +51,28 @@ export default {
 		});
   },
 	CreateSubmit() {
-		const html = ModalRichTECreate.text;
-		// Preserve line breaks by converting <br> and </p> to newlines
-		let text = html.replace(/<br\s*\/?>/gi, '\n');
-		text = text.replace(/<\/p>/gi, '\n');
-		text = text.replace(/<\/div>/gi, '\n');
-		// Remove remaining HTML tags
-		text = text.replace(/<[^>]*>/g, '');
-		// Clean up multiple consecutive newlines
-		text = text.replace(/\n\n+/g, '\n\n').trim();
-		console.log(text);
+		const content = ModalRichTECreate.text;
+		let text = content;
+		
+		// Check if content is HTML (contains tags) or markdown
+		if (content.includes('<') && content.includes('>')) {
+			// HTML content - convert breaks to newlines
+			text = content
+				.replace(/<\/p>\s*<p[^>]*>/gi, '\n\n')  // Paragraph breaks
+				.replace(/<br\s*\/?>/gi, '\n')           // Line breaks
+				.replace(/<\/div>\s*<div[^>]*>/gi, '\n') // Div breaks
+				.replace(/<\/li>\s*<li[^>]*>/gi, '\n')   // List item breaks
+				.replace(/<[^>]*>/g, '')                 // Remove remaining tags
+				.replace(/&nbsp;/g, ' ')                 // Non-breaking spaces
+				.replace(/&lt;/g, '<')                   // HTML entities
+				.replace(/&gt;/g, '>')
+				.replace(/&amp;/g, '&')
+				.replace(/&quot;/g, '"')
+				.replace(/&#39;/g, "'");
+		}
+		// For markdown or plain text, preserve as-is
+		
+		console.log("Text to insert:", text);
 
     insert_info.run({context: text}).then(() => {
 			showAlert("Info create successfully!", "success");
