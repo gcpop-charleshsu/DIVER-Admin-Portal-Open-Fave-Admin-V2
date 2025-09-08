@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 8,
   "boxShadow": "none",
-  "defaultText": "{{getToken.data.token_allocations.find(item => item.wallet_type == \"agent\").wallet_address}}",
+  "defaultText": "{{\n (() => {\n   const filtered = getToken.data.token_allocations.filter(item => \n     item.wallet_type === \"agent\" || \n     item.wallet_type === \"social-coin-agent-system\" || \n     item.wallet_type === \"social-coin-agent-customer\"\n   );\n   \n   if (filtered.length > 0) {\n     const item = filtered.sort((a, b) => {\n       const order = [\"agent\", \"social-coin-agent-system\", \"social-coin-agent-customer\"];\n       return order.indexOf(a.wallet_type) - order.indexOf(b.wallet_type);\n     })[0];\n     \n     return item.wallet_address || \"\";\n   }\n   \n   return \"\";\n })()\n}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

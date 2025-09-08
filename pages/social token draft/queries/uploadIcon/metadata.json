@@ -16,7 +16,7 @@
         {
           "key": "file",
           "type": "File",
-          "value": "{{iconFilePicker.files[0].data}}"
+          "value": "{{iconFilePicker.files[0] ? iconFilePicker.files[0].data : getToken.data.coin_image}}"
         },
         {
           "key": "token_symbol",
@@ -55,10 +55,10 @@
         "key": "path"
       },
       {
-        "key": "bodyFormData[1].value"
+        "key": "bodyFormData[0].value"
       },
       {
-        "key": "bodyFormData[0].value"
+        "key": "bodyFormData[1].value"
       }
     ],
     "name": "uploadIcon",
