@@ -3,12 +3,15 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 8,
   "boxShadow": "none",
-  "buttonColor": "#eab308",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "buttonColor"
     }
   ],
   "dynamicTriggerPathList": [
@@ -17,20 +20,20 @@
     }
   ],
   "iconAlign": "left",
-  "iconName": "refresh",
+  "iconName": "search",
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
   "key": "c00j7sofdo",
-  "leftColumn": 3,
+  "leftColumn": 12,
   "minWidth": 120,
   "mobileBottomRow": 8,
   "mobileLeftColumn": 3,
   "mobileRightColumn": 19,
   "mobileTopRow": 4,
   "needsErrorInfo": false,
-  "onClick": "{{character_info.run()}}",
+  "onClick": "{{buttonAction.searchClick();}}",
   "parentColumnSpace": 17.5625,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -39,11 +42,11 @@
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 11,
-  "text": "Refresh",
+  "rightColumn": 19,
+  "text": "Search",
   "topRow": 4,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "2xk2tvxptf",
-  "widgetName": "RefreshButton"
+  "widgetName": "SearchButton"
 }

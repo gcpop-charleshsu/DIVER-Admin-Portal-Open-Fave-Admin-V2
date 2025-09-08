@@ -51,5 +51,12 @@ export default {
 			ModalCreateResult.setText(insert_info.data.error);
 			ModalCreateResult.setTextColor("red");
 		});
-  }
+  },
+	searchClick() {
+		if (search_keyword.text != "") {
+			search_info.run()
+		} else {
+			character_info.run()
+		}
+	},
 }
