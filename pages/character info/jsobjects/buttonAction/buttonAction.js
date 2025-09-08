@@ -16,9 +16,7 @@ export default {
   },
 	UpdateSubmit() {
 		const html = ModalRichTE.text
-		const temp = document.createElement("div");
-		temp.innerHTML = html;
-		const text = temp.innerText;
+		const text = html.replace(/<[^>]*>/g, '');
 		console.log(text);
 
     update_info.run({context: text}).then(() => {
@@ -35,9 +33,7 @@ export default {
   },
 	CreateSubmit() {
 		const html = ModalRichTECreate.text;
-		const temp = document.createElement("div");
-		temp.innerHTML = html;
-		const text = temp.innerText;
+		const text = html.replace(/<[^>]*>/g, '');
 		console.log(text);
 
     insert_info.run({context: text}).then(() => {
