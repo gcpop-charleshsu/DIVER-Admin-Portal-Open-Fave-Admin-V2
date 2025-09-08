@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "50%",
-  "bottomRow": 67,
+  "bottomRow": 69,
   "boxShadow": "none",
   "defaultImage": "{{iconFilePicker.files[0] ? iconFilePicker.files[0].data : getToken.data.coin_image}}",
   "dynamicBindingPathList": [
@@ -26,7 +26,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "1xpkr09vyj",
-  "leftColumn": 32,
+  "leftColumn": 31,
   "maxZoomLevel": 1,
   "mobileBottomRow": 67,
   "mobileLeftColumn": 10,
@@ -34,7 +34,7 @@
   "mobileTopRow": 55,
   "needsErrorInfo": false,
   "objectFit": "cover",
-  "originalBottomRow": 67,
+  "originalBottomRow": 69,
   "originalTopRow": 52,
   "parentColumnSpace": 16.701171875,
   "parentId": "lbturmmx8r",
