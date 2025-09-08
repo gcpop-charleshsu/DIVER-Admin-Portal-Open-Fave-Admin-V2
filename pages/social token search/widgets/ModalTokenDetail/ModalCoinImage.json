@@ -1,15 +1,17 @@
 {
   "animateLoading": true,
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 43,
+  "borderRadius": "50%",
+  "bottomRow": 26,
   "boxShadow": "none",
   "defaultImage": "{{token_list.selectedRow.coin_image}}",
   "dynamicBindingPathList": [
     {
-      "key": "borderRadius"
-    },
-    {
       "key": "defaultImage"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "borderRadius"
     }
   ],
   "dynamicTriggerPathList": [],
@@ -21,7 +23,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "ajm37exs5f",
-  "leftColumn": 27,
+  "leftColumn": 36,
   "maxZoomLevel": 1,
   "mobileBottomRow": 42,
   "mobileLeftColumn": 26,
@@ -35,8 +37,8 @@
   "parentId": "k6mnmq0kvc",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 37,
-  "topRow": 31,
+  "rightColumn": 48,
+  "topRow": 6,
   "type": "IMAGE_WIDGET",
   "version": 1,
   "widgetId": "q10qi6glwz",
