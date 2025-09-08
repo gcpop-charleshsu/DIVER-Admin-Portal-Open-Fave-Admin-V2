@@ -16,7 +16,14 @@ export default {
   },
 	UpdateSubmit() {
 		const html = ModalRichTE.text
-		const text = html.replace(/<[^>]*>/g, '');
+		// Preserve line breaks by converting <br> and </p> to newlines
+		let text = html.replace(/<br\s*\/?>/gi, '\n');
+		text = text.replace(/<\/p>/gi, '\n');
+		text = text.replace(/<\/div>/gi, '\n');
+		// Remove remaining HTML tags
+		text = text.replace(/<[^>]*>/g, '');
+		// Clean up multiple consecutive newlines
+		text = text.replace(/\n\n+/g, '\n\n').trim();
 		console.log(text);
 
     update_info.run({context: text}).then(() => {
@@ -33,7 +40,14 @@ export default {
   },
 	CreateSubmit() {
 		const html = ModalRichTECreate.text;
-		const text = html.replace(/<[^>]*>/g, '');
+		// Preserve line breaks by converting <br> and </p> to newlines
+		let text = html.replace(/<br\s*\/?>/gi, '\n');
+		text = text.replace(/<\/p>/gi, '\n');
+		text = text.replace(/<\/div>/gi, '\n');
+		// Remove remaining HTML tags
+		text = text.replace(/<[^>]*>/g, '');
+		// Clean up multiple consecutive newlines
+		text = text.replace(/\n\n+/g, '\n\n').trim();
 		console.log(text);
 
     insert_info.run({context: text}).then(() => {
