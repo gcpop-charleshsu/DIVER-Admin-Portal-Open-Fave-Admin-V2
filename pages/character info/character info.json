@@ -1,12 +1,12 @@
 {
-  "gitSyncId": "68b6a5f1ec8af07165cbba50_58bb999c-e954-40f2-906f-9eb10507697e",
+  "gitSyncId": "68b6a5f1ec8af07165cbba50_59e77da7-6af2-4f3b-a8f5-f75aaa4f3e9f",
   "unpublishedPage": {
     "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 800,
+          "bottomRow": 660,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
@@ -26,7 +26,7 @@
         }
       }
     ],
-    "name": "social token draft",
-    "slug": "social-token-draft"
+    "name": "character info",
+    "slug": "character-info"
   }
 }

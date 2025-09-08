@@ -44,6 +44,10 @@
     {
       "id": "social token draft",
       "isDefault": false
+    },
+    {
+      "id": "character info",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

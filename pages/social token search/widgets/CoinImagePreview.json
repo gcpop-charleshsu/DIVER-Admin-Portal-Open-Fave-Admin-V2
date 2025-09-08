@@ -12,6 +12,14 @@
       "key": "defaultImage"
     }
   ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "enableDownload": false,
   "enableRotation": false,
