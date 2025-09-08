@@ -1,15 +1,20 @@
 {
   "animateLoading": true,
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 64,
-  "boxShadow": "none",
+  "borderRadius": "50rem",
+  "bottomRow": 66,
+  "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
   "defaultImage": "{{iconFilePicker.files[0] ? iconFilePicker.files[0].data : getToken.data.coin_image}}",
   "dynamicBindingPathList": [
+    {
+      "key": "defaultImage"
+    }
+  ],
+  "dynamicPropertyPathList": [
     {
       "key": "borderRadius"
     },
     {
-      "key": "defaultImage"
+      "key": "boxShadow"
     }
   ],
   "dynamicTriggerPathList": [],
@@ -21,7 +26,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "1xpkr09vyj",
-  "leftColumn": 27,
+  "leftColumn": 33,
   "maxZoomLevel": 1,
   "mobileBottomRow": 67,
   "mobileLeftColumn": 10,
@@ -29,7 +34,7 @@
   "mobileTopRow": 55,
   "needsErrorInfo": false,
   "objectFit": "cover",
-  "originalBottomRow": 64,
+  "originalBottomRow": 66,
   "originalTopRow": 52,
   "parentColumnSpace": 16.701171875,
   "parentId": "lbturmmx8r",
