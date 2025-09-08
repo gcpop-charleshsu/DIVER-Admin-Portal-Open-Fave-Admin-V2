@@ -15,28 +15,12 @@ export default {
 		});
   },
 	UpdateSubmit() {
-		const content = ModalRichTE.text;
-		let text = content;
-		
-		// Check if content is HTML (contains tags) or markdown
-		if (content.includes('<') && content.includes('>')) {
-			// HTML content - convert breaks to newlines
-			text = content
-				.replace(/<\/p>\s*<p[^>]*>/gi, '\n\n')  // Paragraph breaks
-				.replace(/<br\s*\/?>/gi, '\n')           // Line breaks
-				.replace(/<\/div>\s*<div[^>]*>/gi, '\n') // Div breaks
-				.replace(/<\/li>\s*<li[^>]*>/gi, '\n')   // List item breaks
-				.replace(/<[^>]*>/g, '')                 // Remove remaining tags
-				.replace(/&nbsp;/g, ' ')                 // Non-breaking spaces
-				.replace(/&lt;/g, '<')                   // HTML entities
-				.replace(/&gt;/g, '>')
-				.replace(/&amp;/g, '&')
-				.replace(/&quot;/g, '"')
-				.replace(/&#39;/g, "'");
-		}
-		// For markdown or plain text, preserve as-is
+		// Since the RichTextEditor is in markdown mode, just use the text directly
+		const text = ModalRichTE.text;
 		
 		console.log("Text to update:", text);
+		console.log("Text length:", text.length);
+		console.log("Contains newlines:", text.includes('\n'));
 
     update_info.run({context: text}).then(() => {
 			showAlert("Info update successfully!", "success");
@@ -51,28 +35,12 @@ export default {
 		});
   },
 	CreateSubmit() {
-		const content = ModalRichTECreate.text;
-		let text = content;
-		
-		// Check if content is HTML (contains tags) or markdown
-		if (content.includes('<') && content.includes('>')) {
-			// HTML content - convert breaks to newlines
-			text = content
-				.replace(/<\/p>\s*<p[^>]*>/gi, '\n\n')  // Paragraph breaks
-				.replace(/<br\s*\/?>/gi, '\n')           // Line breaks
-				.replace(/<\/div>\s*<div[^>]*>/gi, '\n') // Div breaks
-				.replace(/<\/li>\s*<li[^>]*>/gi, '\n')   // List item breaks
-				.replace(/<[^>]*>/g, '')                 // Remove remaining tags
-				.replace(/&nbsp;/g, ' ')                 // Non-breaking spaces
-				.replace(/&lt;/g, '<')                   // HTML entities
-				.replace(/&gt;/g, '>')
-				.replace(/&amp;/g, '&')
-				.replace(/&quot;/g, '"')
-				.replace(/&#39;/g, "'");
-		}
-		// For markdown or plain text, preserve as-is
+		// Since the RichTextEditor is in markdown mode, just use the text directly
+		const text = ModalRichTECreate.text;
 		
 		console.log("Text to insert:", text);
+		console.log("Text length:", text.length);
+		console.log("Contains newlines:", text.includes('\n'));
 
     insert_info.run({context: text}).then(() => {
 			showAlert("Info create successfully!", "success");
