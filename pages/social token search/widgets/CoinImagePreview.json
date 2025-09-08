@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
-  "borderRadius": "50rem",
-  "bottomRow": 81,
+  "borderRadius": "50%",
+  "bottomRow": 82,
   "boxShadow": "none",
   "defaultImage": "{{token_list.selectedRow.coin_image}}",
   "dynamicBindingPathList": [
@@ -33,8 +33,8 @@
   "mobileRightColumn": 38,
   "mobileTopRow": 30,
   "needsErrorInfo": false,
-  "objectFit": "cover",
-  "originalBottomRow": 81,
+  "objectFit": "contain",
+  "originalBottomRow": 82,
   "originalTopRow": 55,
   "parentColumnSpace": 16.675,
   "parentId": "0",
