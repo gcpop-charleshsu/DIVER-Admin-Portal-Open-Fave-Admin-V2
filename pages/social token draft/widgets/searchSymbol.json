@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 13,
   "boxShadow": "none",
-  "defaultText": "{{appsmith.URL.queryParams.tokenSymbol ?? \"\"}}",
+  "defaultText": "{{appsmith.URL.queryParams.tokenSymbol || \"\"}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
