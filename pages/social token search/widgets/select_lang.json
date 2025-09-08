@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 11,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( appsmith.store.user_language || English))(select_lang.options, select_lang.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( appsmith.store.user_language || 'English'))(select_lang.options, select_lang.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
