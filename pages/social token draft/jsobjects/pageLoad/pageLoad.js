@@ -1,7 +1,10 @@
 export default {
 	initSetting() {
-		tokenSymbol.setValue("{{appsmith.URL.queryParams.tokenSymbol}}");
-		searchSymbol.setValue("{{appsmith.URL.queryParams.tokenSymbol}}");
-		getToken.run()
+		const tokenSymbolParam = appsmith.URL.queryParams.tokenSymbol;
+		if (tokenSymbolParam) {
+			tokenSymbol.setValue(tokenSymbolParam);
+			searchSymbol.setValue(tokenSymbolParam);
+			getToken.run();
+		}
 	},
 }
