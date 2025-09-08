@@ -22,7 +22,7 @@
   "enableRotation": false,
   "flexVerticalAlignment": "start",
   "image": "",
-  "imageShape": "RECTANGLE",
+  "imageShape": "CIRCLE",
   "isLoading": false,
   "isVisible": true,
   "key": "ajm37exs5f",
