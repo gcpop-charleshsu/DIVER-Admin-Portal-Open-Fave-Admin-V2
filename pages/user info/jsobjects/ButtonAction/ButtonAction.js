@@ -7,12 +7,12 @@ export default {
     },
 
     handleSearch() {
+        // Search is handled automatically by search_user query
+        // which watches UserInfoSearchInput.text
+        // This prevents double reload
         const searchText = UserInfoSearchInput.text;
-        if (searchText && searchText.trim() !== '') {
-            // Run search query when there's search text
-            search_user.run();
-        } else {
-            // Load all users when search is empty
+        if (!searchText || searchText.trim() === '') {
+            // Only manually trigger get_all_user when clearing search
             get_all_user.run();
         }
     }

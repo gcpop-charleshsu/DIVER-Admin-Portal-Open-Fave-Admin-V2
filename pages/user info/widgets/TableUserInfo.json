@@ -60,6 +60,7 @@
   "defaultSelectedRowIndices": [
     0
   ],
+  "enableKeyboardNavigation": true,
   "delimiter": ",",
   "dynamicBindingPathList": [
     {
@@ -157,6 +158,7 @@
   "isVisibleFilters": false,
   "isVisiblePagination": true,
   "isVisibleSearch": false,
+  "onRowSelected": "",
   "key": "7mca6g7g1x",
   "label": "Data",
   "leftColumn": 11,
@@ -166,7 +168,7 @@
   "mobileRightColumn": 45,
   "mobileTopRow": 25,
   "needsErrorInfo": false,
-  "onPageChange": "{{\n  (() => {\n    const searchText = UserInfoSearchInput.text;\n    if (!searchText || searchText.trim() === '') {\n      // Only run get_all_user for pagination when not searching\n      get_all_user.run();\n    }\n    // Don't do anything for search results as they don't have pagination\n  })()\n}}",
+  "onPageChange": "{{\n  (() => {\n    // Page change is handled automatically by get_all_user query\n    // which watches TableUserInfo.pageNo\n    // This prevents double reload\n  })()\n}}",
   "parentColumnSpace": 41.484375,
   "parentId": "0",
   "parentRowSpace": 10,
