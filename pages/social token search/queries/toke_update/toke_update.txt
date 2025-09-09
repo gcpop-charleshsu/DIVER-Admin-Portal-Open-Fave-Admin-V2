@@ -1,0 +1,7 @@
+{{
+	{
+		creator_name: ModalCreatorName.text,
+		creator_wallet_address: ModalCreatorWalletAddress.text,
+		visibility: this.params.visibility,
+	}
+}}

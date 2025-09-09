@@ -1,10 +1,11 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 38,
+  "bottomRow": 95,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-  "buttonVariant": "SECONDARY",
+  "buttonStyle": "PRIMARY",
+  "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
     {
@@ -12,11 +13,6 @@
     },
     {
       "key": "borderRadius"
-    }
-  ],
-  "dynamicPropertyPathList": [
-    {
-      "key": "onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -29,27 +25,27 @@
   "isLoading": false,
   "isVisible": true,
   "key": "r65xtxqkzq",
-  "leftColumn": 1,
+  "leftColumn": 29,
   "minWidth": 120,
-  "mobileBottomRow": 37,
-  "mobileLeftColumn": 30,
-  "mobileRightColumn": 46,
-  "mobileTopRow": 33,
+  "mobileBottomRow": 22,
+  "mobileLeftColumn": 31,
+  "mobileRightColumn": 47,
+  "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{ButtonAction.form_reset()}}",
-  "originalBottomRow": 37,
-  "originalTopRow": 33,
-  "parentId": "6g12cujyx6",
+  "onClick": "{{ButtonAction.UpdateSubmit();}}",
+  "originalBottomRow": 106,
+  "originalTopRow": 99,
+  "parentId": "k6mnmq0kvc",
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 30,
-  "text": "Reset",
-  "topRow": 34,
+  "rightColumn": 56,
+  "text": "Update",
+  "topRow": 88,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "idn081tv0l",
-  "widgetName": "form_reset"
+  "widgetId": "ndr0fy4w10",
+  "widgetName": "ModalUpdateButton"
 }
