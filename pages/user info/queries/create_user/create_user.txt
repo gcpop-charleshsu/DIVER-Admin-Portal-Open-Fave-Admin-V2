@@ -8,5 +8,5 @@
   "tiktok_id": "{{CUFI_Tiktok_ID.text || ''}}",
   "x_id": "{{CUFI_X_ID.text || ''}}",
   "random": {{CUFI_Random.text}},
-  "visibility": {{CUFI_Visibility.isDisabled}}
+  "visibility": {{CUFI_Visibility.isSwitchedOn}}
 }
