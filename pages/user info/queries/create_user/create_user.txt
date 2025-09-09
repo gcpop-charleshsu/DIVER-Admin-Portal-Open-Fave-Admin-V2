@@ -1,0 +1,12 @@
+{
+  "creator_name": "bbkb.of",
+  "creator_sub_wallet_address": "0x388C9C3d20d965E548aD5541BCD5DFA4Ac9f63C6",
+  "creator_description": "None",
+  "agent_name": "nonono",
+  "instagram_id": "@bbkb",
+  "youtube_id": "nonono",
+  "tiktok_id": "nonono",
+  "x_id": "nonono",
+  "random": 0.55,
+  "visibility": false
+}

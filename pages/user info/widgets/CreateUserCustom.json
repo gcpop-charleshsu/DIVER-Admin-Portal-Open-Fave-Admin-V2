@@ -1,0 +1,54 @@
+{
+  "backgroundColor": "transparent",
+  "borderColor": "transparent",
+  "borderRadius": "50px",
+  "borderWidth": "0",
+  "bottomRow": 93,
+  "boxShadow": "none",
+  "defaultModel": "{\n  \"buttonClicked\": false\n}",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "events": [],
+  "isCanvas": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "xjfhps1fec",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 12,
+  "mobileLeftColumn": 48,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 8,
+  "needsErrorInfo": false,
+  "onResetClick": "",
+  "originalBottomRow": 93,
+  "originalTopRow": 85,
+  "parentColumnSpace": 11.59375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 5,
+  "srcDoc": {
+    "css": ".custom-button {\n  position: relative;\n  width: 180px;\n  height: 50px;\n  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);\n  border: none;\n  border-radius: 30px;\n  color: white;\n  font-size: 16px;\n  font-weight: bold;\n  cursor: pointer;\n  overflow: hidden;\n  transition: all 0.3s ease;\n  box-shadow: 0 10px 40px -10px rgba(147, 51, 234, 0.5);\n}\n\n.custom-button:hover {\n  transform: translateY(-2px);\n  box-shadow: 0 15px 50px -10px rgba(147, 51, 234, 0.7);\n}\n\n.custom-button:active {\n  transform: translateY(0);\n}\n\n.custom-button::before {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: -100%;\n  width: 100%;\n  height: 100%;\n  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);\n  transition: left 0.7s;\n}\n\n.custom-button:hover::before {\n  left: 100%;\n}\n\n.sparkle {\n  animation: sparkle 1.5s infinite;\n}\n\n@keyframes sparkle {\n  0%, 100% { opacity: 1; }\n  50% { opacity: 0.5; }\n}",
+    "html": "<div style=\"display: flex; justify-content: center; align-items: center; height: 100%;\">\n  <button class=\"custom-button\" onclick=\"appsmith.triggerEvent('onClick')\">\n    <span class=\"sparkle\">✨</span> Create User <span class=\"sparkle\">✨</span>\n  </button>\n</div>",
+    "js": "appsmith.onReady(() => {\n  appsmith.onModelChange(() => {\n    // Handle model changes if needed\n  });\n});\n\nwindow.appsmith.triggerEvent = (eventName) => {\n  if (eventName === 'onClick') {\n    // Trigger the modal opening\n    appsmith.showModal('CreateUserModal');\n  }\n};"
+  },
+  "theme": "{{appsmith.theme}}",
+  "topRow": 85,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": ".custom-button {\n  position: relative;\n  width: 180px;\n  height: 50px;\n  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);\n  border: none;\n  border-radius: 30px;\n  color: white;\n  font-size: 16px;\n  font-weight: bold;\n  cursor: pointer;\n  overflow: hidden;\n  transition: all 0.3s ease;\n  box-shadow: 0 10px 40px -10px rgba(147, 51, 234, 0.5);\n}\n\n.custom-button:hover {\n  transform: translateY(-2px);\n  box-shadow: 0 15px 50px -10px rgba(147, 51, 234, 0.7);\n}\n\n.custom-button:active {\n  transform: translateY(0);\n}\n\n.custom-button::before {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: -100%;\n  width: 100%;\n  height: 100%;\n  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);\n  transition: left 0.7s;\n}\n\n.custom-button:hover::before {\n  left: 100%;\n}\n\n.sparkle {\n  animation: sparkle 1.5s infinite;\n}\n\n@keyframes sparkle {\n  0%, 100% { opacity: 1; }\n  50% { opacity: 0.5; }\n}",
+    "html": "<div style=\"display: flex; justify-content: center; align-items: center; height: 100%;\">\n  <button class=\"custom-button\" onclick=\"appsmith.triggerEvent('onClick')\">\n    <span class=\"sparkle\">✨</span> Create User <span class=\"sparkle\">✨</span>\n  </button>\n</div>",
+    "js": "appsmith.onReady(() => {\n  appsmith.onModelChange(() => {\n    // Handle model changes if needed\n  });\n});\n\nwindow.appsmith.triggerEvent = (eventName) => {\n  if (eventName === 'onClick') {\n    // Trigger the modal opening\n    appsmith.showModal('CreateUserModal');\n  }\n};"
+  },
+  "version": 1,
+  "widgetId": "y6n6pqjs89",
+  "widgetName": "CreateUserCustom"
+}
