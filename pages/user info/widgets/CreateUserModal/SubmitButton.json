@@ -1,0 +1,57 @@
+{
+  "aggressiveCompression": false,
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 84,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "buttonColor"
+    }
+  ],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "googleRecaptchaKey": "",
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "submit_button",
+  "leftColumn": 16,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 120,
+  "mobileBottomRow": 84,
+  "mobileLeftColumn": 16,
+  "mobileRightColumn\": 30,
+  "mobileTopRow": 80,
+  "needsErrorInfo": false,
+  "onClick": "{{ButtonAction.handleCreateUser()}}",
+  "originalBottomRow": 84,
+  "originalTopRow": 80,
+  "parentColumnSpace": 8.173828125,
+  "parentId": "create_user_form",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 30,
+  "text": "Create User",
+  "topRow": 80,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "submit_button",
+  "widgetName": "SubmitButton"
+}
