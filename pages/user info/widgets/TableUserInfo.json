@@ -138,11 +138,17 @@
     },
     {
       "key": "onPageChange"
+    },
+    {
+      "key": "onRowSelected"
     }
   ],
   "dynamicTriggerPathList": [
     {
       "key": "onPageChange"
+    },
+    {
+      "key": "onRowSelected"
     }
   ],
   "enableClientSideSearch": true,
@@ -168,7 +174,7 @@
   "mobileTopRow": 25,
   "needsErrorInfo": false,
   "onPageChange": "{{\n  (() => {\n    // Page change is handled automatically by get_all_user query\n    // which watches TableUserInfo.pageNo\n    // This prevents double reload\n  })()\n}}",
-  "onRowSelected": "",
+  "onRowSelected": "{{User.showDetail()}}",
   "parentColumnSpace": 41.484375,
   "parentId": "0",
   "parentRowSpace": 10,
