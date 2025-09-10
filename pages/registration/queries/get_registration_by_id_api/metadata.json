@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "68c055e2da0307624dd6b70e_5ee5c0ea-73bd-42ae-9b45-ca651b78baab",
-  "id": "user info_get_all_registrations",
+  "gitSyncId": "68bf805915990a7e28a1860a_785cdcbe-fb5d-4322-9ef3-b666293c2ad8",
+  "id": "registration_get_registration_by_id_api",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -16,22 +16,13 @@
       "httpMethod": "GET",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "{{URLSetting.getSocialApiUrl()}}/admin/api/v1/registrations",
+      "path": "{{URLSetting.getSocialApiUrl()}}/admin/api/v1/registrations/{{registration_table.selectedRow.id}}",
       "pluginSpecifiedTemplates": [
         {
           "value": true
         }
       ],
-      "queryParameters": [
-        {
-          "key": "page",
-          "value": "1"
-        },
-        {
-          "key": "limit",
-          "value": "20"
-        }
-      ],
+      "queryParameters": [],
       "timeoutInMillisecond": 10000
     },
     "confirmBeforeExecute": false,
@@ -46,10 +37,16 @@
     "dynamicBindingPathList": [
       {
         "key": "path"
+      },
+      {
+        "key": "queryParameters[0].key"
+      },
+      {
+        "key": "queryParameters[0].value"
       }
     ],
-    "name": "get_all_registrations",
-    "pageId": "user info",
+    "name": "get_registration_by_id_api",
+    "pageId": "registration",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
