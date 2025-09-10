@@ -4,7 +4,7 @@ export default {
 			showModal('UD_Model');
 	},
 	updateDetail: () => {
-		update_user.run(.then(() => {
+		update_user.run().then(() => {
 			get_all_user.run()
 			closeModal('UD_Model')
 		}).catch((error) => {
