@@ -48,6 +48,14 @@
     {
       "id": "character info",
       "isDefault": false
+    },
+    {
+      "id": "user info",
+      "isDefault": false
+    },
+    {
+      "id": "registration",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

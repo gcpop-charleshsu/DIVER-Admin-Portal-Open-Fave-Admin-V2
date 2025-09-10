@@ -1,0 +1,12 @@
+{
+  "creator_name": "{{CUFI_CN.text}}",
+  "creator_sub_wallet_address": "{{CUFI_SWA.text}}",
+  "creator_description": "{{CUFI_Description.text}}",
+  "agent_name": "{{CUFI_Agent.text}}",
+  "instagram_id": "{{CUFI_IG_ID.text}}",
+  "youtube_id": "{{CUFI_YT_ID.text || ''}}",
+  "tiktok_id": "{{CUFI_Tiktok_ID.text || ''}}",
+  "x_id": "{{CUFI_X_ID.text || ''}}",
+  "random": {{CUFI_Random.text}},
+  "visibility": {{CUFI_Visibility.isSwitchedOn}}
+}

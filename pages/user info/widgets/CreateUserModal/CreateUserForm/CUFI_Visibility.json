@@ -1,0 +1,40 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignWidget": "LEFT",
+  "animateLoading": true,
+  "bottomRow": 50,
+  "boxShadow": "none",
+  "defaultSwitchState": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "3hll3ca7um",
+  "label": "Visibility",
+  "labelPosition": "Left",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 55,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 7,
+  "mobileTopRow": 51,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 23.734375,
+  "parentId": "mbrektj0xb",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 9,
+  "topRow": 46,
+  "type": "SWITCH_WIDGET",
+  "version": 1,
+  "widgetId": "x6ednz0jlg",
+  "widgetName": "CUFI_Visibility"
+}
