@@ -48,9 +48,10 @@
     "random",
     "user_visibility",
     "created_at",
-    "updated_at"
+    "updated_at",
+    "token_visibility"
   ],
-  "columnUpdatedAt": 1757519737225,
+  "columnUpdatedAt": 1757521751818,
   "columnWidthMap": {
     "creator_address": 159,
     "creator_description": 226
@@ -129,6 +130,9 @@
     },
     {
       "key": "totalRecordsCount"
+    },
+    {
+      "key": "primaryColumns.token_visibility.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -172,7 +176,7 @@
   "mobileRightColumn": 45,
   "mobileTopRow": 25,
   "needsErrorInfo": false,
-  "onPageChange": "{{\n  (() => {\n    // Page change is handled automatically by get_all_user query\n    // which watches TableUserInfo.pageNo\n    // This prevents double reload\n  })()\n}}",
+  "onPageChange": "{{\n  (() => {\n    const isSearching = UserInfoSearchInput.text?.trim() !== '';\n\n    if (!isSearching) {\n      console.log('Page changed to:', TableUserInfo.pageNo);\n    }\n  })()\n}}",
   "onRowSelected": "{{User.showDetail()}}",
   "parentColumnSpace": 41.484375,
   "parentId": "0",
@@ -620,6 +624,40 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
+    "token_visibility": {
+      "alias": "token_visibility",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "checkbox",
+      "computedValue": "{{(() => { const tableData = TableUserInfo.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"token_visibility\"])) : token_visibility })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "token_visibility",
+      "index": 15,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "token_visibility",
+      "notation": "standard",
+      "originalId": "token_visibility",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "updated_at": {
       "alias": "updated_at",
       "allowCellWrapping": false,
@@ -762,10 +800,10 @@
   "rightColumn": 63,
   "searchKey": "",
   "serverSidePaginationEnabled": true,
-  "tableData": "{{search_user.data.data || get_all_user.data.data}}",
+  "tableData": "{{\n  (() => {\n    try {\n      if (search_user.isLoading || get_all_user.isLoading) {\n        return [];\n      }\n\n      const searchText = UserInfoSearchInput.text;\n      const isSearching = searchText && searchText.trim() !== '';\n      \n      console.log('Table data - Search mode:', isSearching, 'Page:', TableUserInfo.pageNo);\n\n      if (isSearching) {\n        console.log('Displaying search results:', search_user.data?.data?.length || 0);\n        return search_user.data?.data || [];\n      } else {\n        console.log('Displaying page data:', get_all_user.data?.data?.length || 0);\n        return get_all_user.data?.data || [];\n      }\n      \n    } catch (error) {\n      console.error(\"Error loading table data:\", error);\n      return [];\n    }\n  })()\n}}",
   "textSize": "0.875rem",
   "topRow": 11,
-  "totalRecordsCount": "{{get_all_user.data.total}}",
+  "totalRecordsCount": "{{\n  (() => {\n    const isSearching = UserInfoSearchInput.text?.trim() !== '';\n    \n    if (isSearching) {\n      return search_user.data?.total || 0;\n    } else {\n      return get_all_user.data?.total || 0;\n    }\n  })()\n}}",
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER",
