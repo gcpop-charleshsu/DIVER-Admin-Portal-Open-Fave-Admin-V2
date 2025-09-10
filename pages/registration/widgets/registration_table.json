@@ -47,7 +47,7 @@
     "created_at",
     "updated_at"
   ],
-  "columnUpdatedAt": 1757402623714,
+  "columnUpdatedAt": 1757464273325,
   "columnWidthMap": {},
   "customIsLoading": false,
   "customIsLoadingValue": "",
@@ -363,7 +363,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "notes",
       "notation": "standard",
       "originalId": "notes",
