@@ -50,7 +50,7 @@
     "created_at",
     "updated_at"
   ],
-  "columnUpdatedAt": 1757514138084,
+  "columnUpdatedAt": 1757519737225,
   "columnWidthMap": {
     "creator_address": 159,
     "creator_description": 226
@@ -762,10 +762,10 @@
   "rightColumn": 63,
   "searchKey": "",
   "serverSidePaginationEnabled": true,
-  "tableData": "{{\n  (() => {\n    try {\n      // Show loading state\n      if (search_user.isLoading || get_all_user.isLoading) {\n        return [];\n      }\n      \n      // Check if we're actively searching\n      const isSearching = UserInfoSearchInput.text && UserInfoSearchInput.text.trim() !== '';\n      \n      // If searching AND search_user has data, show search results\n      if (isSearching && search_user.data && search_user.data.data) {\n        return search_user.data.data;\n      }\n      \n      // Otherwise, show all users\n      if (get_all_user.data && get_all_user.data.data) {\n        return get_all_user.data.data;\n      }\n      \n      return [];\n    } catch (error) {\n      console.error(\"Error loading table data:\", error);\n      return [];\n    }\n  })()\n}}\n",
+  "tableData": "{{search_user.data.data || get_all_user.data.data}}",
   "textSize": "0.875rem",
   "topRow": 11,
-  "totalRecordsCount": "{{\n  (() => {\n    try {\n      const isSearching = UserInfoSearchInput.text && UserInfoSearchInput.text.trim() !== '';\n      \n      if (isSearching && search_user.data) {\n        if (search_user.data.total !== undefined) {\n          return search_user.data.total;\n        }\n        if (search_user.data.data && Array.isArray(search_user.data.data)) {\n          return search_user.data.data.length;\n        }\n        return 0;\n      }\n      \n      if (get_all_user.data && get_all_user.data.total !== undefined) {\n        return get_all_user.data.total;\n      }\n      \n      return 0;\n    } catch (error) {\n      console.error(\"Error calculating total records:\", error);\n      return 0;\n    }\n  })()\n}}",
+  "totalRecordsCount": "{{get_all_user.data.total}}",
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER",

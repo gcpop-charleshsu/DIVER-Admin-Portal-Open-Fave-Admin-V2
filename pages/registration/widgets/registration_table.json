@@ -48,7 +48,9 @@
     "updated_at"
   ],
   "columnUpdatedAt": 1757464273325,
-  "columnWidthMap": {},
+  "columnWidthMap": {
+    "creator_name": 332
+  },
   "customIsLoading": false,
   "customIsLoadingValue": "",
   "defaultPageSize": 0,
@@ -150,7 +152,7 @@
   "mobileRightColumn": 37,
   "mobileTopRow": 24,
   "needsErrorInfo": false,
-  "onRowSelected": "Registration.showDetail()",
+  "onRowSelected": "{{Registration.showDetail()}}",
   "originalBottomRow": 75,
   "originalTopRow": 23,
   "parentColumnSpace": 16.515625,

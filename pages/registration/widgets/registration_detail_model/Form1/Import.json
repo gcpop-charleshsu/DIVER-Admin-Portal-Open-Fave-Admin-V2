@@ -3,15 +3,22 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 93,
   "boxShadow": "none",
-  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-  "buttonVariant": "SECONDARY",
-  "disabledWhenInvalid": false,
+  "buttonColor": "#86efac",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": true,
   "dynamicBindingPathList": [
     {
-      "key": "buttonColor"
-    },
-    {
       "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
     }
   ],
   "isDefaultClickDisabled": true,
@@ -19,13 +26,14 @@
   "isLoading": false,
   "isVisible": true,
   "key": "7mtz3fbhxz",
-  "leftColumn": 0,
+  "leftColumn": 25,
   "minWidth": 120,
   "mobileBottomRow": 37,
-  "mobileLeftColumn": 30,
-  "mobileRightColumn": 46,
+  "mobileLeftColumn": 46,
+  "mobileRightColumn": 62,
   "mobileTopRow": 33,
   "needsErrorInfo": false,
+  "onClick": "{{Registration.importUser()}}",
   "originalBottomRow": 93,
   "originalTopRow": 89,
   "parentId": "ww4ad9hxcz",
@@ -34,11 +42,11 @@
   "renderMode": "CANVAS",
   "resetFormOnClick": true,
   "responsiveBehavior": "hug",
-  "rightColumn": 12,
-  "text": "Reset",
+  "rightColumn": 36,
+  "text": "Import",
   "topRow": 89,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "e7kw3fhmc7",
-  "widgetName": "Reset"
+  "widgetId": "201vce8oc3",
+  "widgetName": "Import"
 }

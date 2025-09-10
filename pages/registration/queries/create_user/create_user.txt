@@ -1,0 +1,12 @@
+{
+  "creator_name": "{{CreatorName.text}}",
+  "creator_sub_wallet_address": "{{CreatorWalletAddress.text}}",
+  "creator_description": "{{Introduction.text}}",
+  "agent_name": "",
+  "instagram_id": "{{UserInstagramId.text}}",
+  "youtube_id": "{{YoutubeId.text || ''}}",
+  "tiktok_id": "{{TiktokId.text || ''}}",
+  "x_id": "{{XId.text || ''}}",
+  "random": 0,
+  "visibility": false
+}
