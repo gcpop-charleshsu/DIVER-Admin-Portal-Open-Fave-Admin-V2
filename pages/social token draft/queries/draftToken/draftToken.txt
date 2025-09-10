@@ -1,5 +1,5 @@
 {
-  "auto_fill_enabled": {{Boolean(autoFillEnabled.selectedOptionValue)}},
+  "auto_fill_enabled": {{(autoFillEnabled.selectedOptionValue == "true")}},
   "collateral_amt": {{Number(collateralAmt.text)}},
   "collateral_symbol": {{collateralSymbol.selectedOptionValue}},
   "creator_name": {{creatorName.text}},
@@ -10,9 +10,9 @@
   "decimal_price_change": {{Number(decimalPriceChange.text)}},
   "decimal_quotation": {{Number(decimalQuotation.text)}},
   "platform": {{platform.selectedOptionValue}},
-  "remint_enabled": {{Boolean(remintEnabled.selectedOptionValue)}},
+  "remint_enabled": {{(remintEnabled.selectedOptionValue == "true")}},
   "swap_allocation_percent": {{Number(swapAllocationPercent.text)}},
-  "swap_enabled": {{Boolean(swapEnabled.selectedOptionValue)}},
+  "swap_enabled": {{(swapEnabled.selectedOptionValue == "true")}},
   "swap_fee_rate": {{Number(swapFeeRate.text)}},
   "swap_high_multiple_limit": {{Number(swapHighMultipleLimit.text)}},
   "swap_low_limit_percent": {{Number(swapLowLimitPercent.text)}},
@@ -39,5 +39,5 @@
   "token_initial_supply": {{Number(tokenInitialSupply.text)}},
   "token_name": {{tokenName.text}},
   "token_symbol": {{tokenSymbol.text}},
-  "visibility": {{Boolean(visibility.selectedOptionValue)}},
+  "visibility": {{(visibility.selectedOptionValue == "true")}},
 }
