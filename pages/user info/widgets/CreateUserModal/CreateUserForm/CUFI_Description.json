@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 15,
+  "bottomRow": 29,
   "boxShadow": "none",
   "defaultText": "",
   "dynamicBindingPathList": [
@@ -14,10 +14,10 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicHeight": "FIXED",
+  "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
-  "inputType": "TEXT",
+  "inputType": "MULTI_LINE_TEXT",
   "isDisabled": false,
   "isLoading": false,
   "isRequired": true,
@@ -38,6 +38,8 @@
   "mobileRightColumn": 15,
   "mobileTopRow": 8,
   "needsErrorInfo": false,
+  "originalBottomRow": 15,
+  "originalTopRow": 11,
   "parentColumnSpace": 17.943359375,
   "parentId": "mbrektj0xb",
   "parentRowSpace": 10,
@@ -45,6 +47,7 @@
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
   "rightColumn": 58,
+  "shouldAllowAutofill": false,
   "showStepArrows": false,
   "topRow": 11,
   "type": "INPUT_WIDGET_V2",

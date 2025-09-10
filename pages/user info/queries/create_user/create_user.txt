@@ -7,6 +7,6 @@
   "youtube_id": "{{CUFI_YT_ID.text || ''}}",
   "tiktok_id": "{{CUFI_Tiktok_ID.text || ''}}",
   "x_id": "{{CUFI_X_ID.text || ''}}",
-  "random": {{CUFI_Random.text}},
+  "random": {{parseFloat(CUFI_Random.text) || 0}},
   "visibility": {{CUFI_Visibility.isSwitchedOn}}
 }

@@ -3,9 +3,9 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 43,
+  "bottomRow": 54,
   "boxShadow": "none",
-  "defaultText": "{{appsmith.store.selectedUser.referrer_instagram_id}}",
+  "defaultText": "{{appsmith.store.selectedUser?.referrer_instagram_id || ''}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -41,8 +41,8 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "originalBottomRow": 40,
-  "originalTopRow": 33,
+  "originalBottomRow": 54,
+  "originalTopRow": 47,
   "parentColumnSpace": 15.560546875,
   "parentId": "3iaqq2264g",
   "parentRowSpace": 10,
@@ -51,7 +51,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "showStepArrows": false,
-  "topRow": 36,
+  "topRow": 47,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "q7kniz6yof",

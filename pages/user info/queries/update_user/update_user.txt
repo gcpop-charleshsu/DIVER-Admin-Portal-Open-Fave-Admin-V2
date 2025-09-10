@@ -6,6 +6,6 @@
   "youtube_id": "{{UDF_YT_ID.text || ''}}",
   "tiktok_id": "{{UDF_TT_ID.text || ''}}",
   "x_id": "{{UDF_X_ID.text || ''}}",
-  "random": {{UDF_Random.text}},
+  "random": {{parseFloat(UDF_Random.text) || 0}},
   "visibility": {{UDF_U_V.isSwitchedOn}}
 }
