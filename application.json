@@ -52,10 +52,6 @@
     {
       "id": "user info",
       "isDefault": false
-    },
-    {
-      "id": "registration",
-      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
