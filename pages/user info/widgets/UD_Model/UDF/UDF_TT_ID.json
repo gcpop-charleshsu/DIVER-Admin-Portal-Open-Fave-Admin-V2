@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 83,
   "boxShadow": "none",
-  "defaultText": "{{search_user.data?.tiktok_id || ''}}",
+  "defaultText": "{{appsmith.store.selectedUser?.tiktok_id || ''}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

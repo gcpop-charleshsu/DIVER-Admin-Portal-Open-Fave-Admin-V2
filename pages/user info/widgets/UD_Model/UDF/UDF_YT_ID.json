@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 75,
   "boxShadow": "none",
-  "defaultText": "{{search_user.data?.youtube_id || ''}}",
+  "defaultText": "{{appsmith.store.selectedUser?.youtube_id || ''}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

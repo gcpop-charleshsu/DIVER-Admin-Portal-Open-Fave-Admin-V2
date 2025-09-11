@@ -4,7 +4,7 @@
   "animateLoading": true,
   "bottomRow": 120,
   "boxShadow": "none",
-  "defaultSwitchState": "{{search_user.data?.user_visibility}}",
+  "defaultSwitchState": "{{appsmith.store.selectedUser?.user_visibility}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

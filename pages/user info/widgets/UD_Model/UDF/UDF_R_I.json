@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 43,
   "boxShadow": "none",
-  "defaultText": "{{search_user.data?.referrer_instagram_id || ''}}",
+  "defaultText": "{{appsmith.store.selectedUser?.referrer_instagram_id || ''}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

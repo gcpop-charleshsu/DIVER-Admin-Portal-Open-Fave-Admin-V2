@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 24,
   "boxShadow": "none",
-  "defaultText": "{{search_user.data?.creator_address || ''}}",
+  "defaultText": "{{appsmith.store.selectedUser?.creator_address || ''}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -21,7 +21,7 @@
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
   "inputType": "TEXT",
-  "isDisabled": false,
+  "isDisabled": true,
   "isLoading": false,
   "isRequired": true,
   "isVisible": true,
