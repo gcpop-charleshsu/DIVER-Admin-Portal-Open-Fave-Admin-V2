@@ -1,8 +1,11 @@
 export default {
     form_reset() {
+        // Clear the search fields
         UserInfoSearchInput.setValue("");
         UserInfoSearchVisiable.setSelectedOption("none");
-        // After resetting, reload all users
+        
+        // The table should maintain its page due to maintainPageOnDataChange setting
+        // Just refresh the data
         get_all_user.run();
     },
 

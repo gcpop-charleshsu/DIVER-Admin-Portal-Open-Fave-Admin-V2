@@ -58,7 +58,7 @@
   },
   "customIsLoading": false,
   "customIsLoadingValue": "",
-  "defaultPageSize": 0,
+  "defaultPageSize": 20,
   "defaultSelectedRowIndex": 0,
   "defaultSelectedRowIndices": [
     0
@@ -176,7 +176,7 @@
   "mobileRightColumn": 45,
   "mobileTopRow": 25,
   "needsErrorInfo": false,
-  "onPageChange": "{{\n  (() => {\n    const isSearching = UserInfoSearchInput.text?.trim() !== '';\n\n    if (!isSearching) {\n      console.log('Page changed to:', TableUserInfo.pageNo);\n    }\n  })()\n}}",
+  "onPageChange": "{{\n  (() => {\n    // Save current page to store whenever it changes\n    storeValue('currentTablePage', TableUserInfo.pageNo);\n    \n    const isSearching = UserInfoSearchInput.text?.trim() !== '';\n    if (!isSearching) {\n      console.log('Page changed to:', TableUserInfo.pageNo);\n    }\n  })()\n}}",
   "onRowSelected": "{{User.showDetail()}}",
   "originalBottomRow": 99,
   "originalTopRow": 11,
@@ -802,6 +802,8 @@
   "rightColumn": 63,
   "searchKey": "",
   "serverSidePaginationEnabled": true,
+  "maintainPageOnDataChange": true,
+  "resetPageOnSearch": false,
   "tableData": "{{\n  (() => {\n    try {\n      if (admin_search_user.isLoading || get_all_user.isLoading) {\n        return [];\n      }\n\n      const searchText = UserInfoSearchInput.text;\n      const isSearching = searchText && searchText.trim() !== '';\n      \n      console.log('Table data - Search mode:', isSearching, 'Page:', TableUserInfo.pageNo);\n\n      if (isSearching) {\n        console.log('Displaying search results:', admin_search_user.data?.data?.length || 0);\n        return admin_search_user.data?.data || [];\n      } else {\n        console.log('Displaying page data:', get_all_user.data?.data?.length || 0);\n        return get_all_user.data?.data || [];\n      }\n      \n    } catch (error) {\n      console.error(\"Error loading table data:\", error);\n      return [];\n    }\n  })()\n}}",
   "textSize": "0.875rem",
   "topRow": 11,
