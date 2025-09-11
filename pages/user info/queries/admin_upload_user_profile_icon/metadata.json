@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "68c138dfda0307624dd6b88d_21078c16-846f-4c8b-b758-1fcfe1ffc857",
-  "id": "user info_upload_user_icon",
+  "gitSyncId": "68c24adbda0307624dd6baf5_3e9f08bf-4476-46f1-b377-43f4caf873c8",
+  "id": "user info_admin_upload_user_profile_icon",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -16,7 +16,7 @@
         {
           "key": "file",
           "type": "File",
-          "value": "{{UDF_FilePicker.files[0]?.data}}"
+          "value": "{{UDF_FilePicker_Profile.files[0]?.data}}"
         }
       ],
       "encodeParamsToggle": true,
@@ -27,7 +27,7 @@
       "httpMethod": "POST",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "{{URLSetting.getSocialApiUrl()}}/admin/api/v1/users/id/{{UDF_ID.text}}/icons/avatar",
+      "path": "{{URLSetting.getSocialApiUrl()}}/admin/api/v1/users/id/{{UDF_ID.text}}/icons/profile",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -53,7 +53,7 @@
         "key": "bodyFormData[0].value"
       }
     ],
-    "name": "upload_user_icon",
+    "name": "admin_upload_user_profile_icon",
     "pageId": "user info",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false

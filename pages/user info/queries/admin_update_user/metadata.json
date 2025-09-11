@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "68c04ccdda0307624dd6b65f_7f9cf1bd-6118-4713-a264-32e7ed16b0e9",
-  "id": "user info_create_user",
+  "gitSyncId": "68c0550eda0307624dd6b6b7_4058fa64-cb68-4d05-9098-d2f0ca812cf7",
+  "id": "user info_admin_update_user",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -11,17 +11,17 @@
           "value": "application/json"
         }
       ],
-      "body": "{\n  \"creator_name\": \"{{CUFI_CN.text}}\",\n  \"creator_sub_wallet_address\": \"{{CUFI_SWA.text}}\",\n  \"creator_description\": \"{{CUFI_Description.text}}\",\n  \"agent_name\": \"{{CUFI_Agent.text}}\",\n  \"instagram_id\": \"{{CUFI_IG_ID.text}}\",\n  \"youtube_id\": \"{{CUFI_YT_ID.text || ''}}\",\n  \"tiktok_id\": \"{{CUFI_Tiktok_ID.text || ''}}\",\n  \"x_id\": \"{{CUFI_X_ID.text || ''}}\",\n  \"random\": {{parseFloat(CUFI_Random.text) || 0}},\n  \"visibility\": {{CUFI_Visibility.isSwitchedOn}}\n}",
+      "body": "{\n\t\"creator_name\": \"{{UDF_C_N.text}}\",\n\t\"creator_sub_wallet_address\": \"{{UDF_S_A.text || ''}}\",\n\t\"creator_description\": \"{{UDF_Description.text}}\",\n\t\"agent_name\": \"{{UDF_Agent.text}}\",\n\t\"instagram_id\": \"{{UDF_IG_ID.text}}\",\n\t\"youtube_id\": \"{{UDF_YT_ID.text || ''}}\",\n\t\"tiktok_id\": \"{{UDF_TT_ID.text || ''}}\",\n\t\"x_id\": \"{{UDF_X_ID.text || ''}}\",\n\t\"random\": {{parseFloat(UDF_Random.text) || 0}},\n\t\"visibility\": {{UDF_U_V.isSwitchedOn}}\n}",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {
         "apiContentType": "application/json"
       },
       "headers": [],
-      "httpMethod": "POST",
+      "httpMethod": "PATCH",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "{{URLSetting.getSocialApiUrl()}}/admin/api/v1/users",
+      "path": "{{URLSetting.getSocialApiUrl()}}/admin/api/v1/users/id/{{UDF_ID.text}}",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -47,7 +47,7 @@
         "key": "body"
       }
     ],
-    "name": "create_user",
+    "name": "admin_update_user",
     "pageId": "user info",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false

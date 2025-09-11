@@ -1,0 +1,42 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 21,
+  "boxShadow": "none",
+  "defaultImage": "{{UDF_FilePicker_Profile.files[0]?.data || UDF_P_I.text}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultImage"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "enableDownload": false,
+  "enableRotation": false,
+  "flexVerticalAlignment": "start",
+  "image": "",
+  "imageShape": "RECTANGLE",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "y9ym15eah1",
+  "leftColumn": 37,
+  "maxZoomLevel": 1,
+  "mobileBottomRow": 18,
+  "mobileLeftColumn": 48,
+  "mobileRightColumn": 60,
+  "mobileTopRow": 6,
+  "needsErrorInfo": false,
+  "objectFit": "cover",
+  "parentColumnSpace": 20.0625,
+  "parentId": "3iaqq2264g",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 49,
+  "topRow": 1,
+  "type": "IMAGE_WIDGET",
+  "version": 1,
+  "widgetId": "xbbh339n0j",
+  "widgetName": "UDF_IMAGE_Profile"
+}

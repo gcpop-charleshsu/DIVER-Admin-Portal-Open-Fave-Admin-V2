@@ -3,7 +3,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 21,
   "boxShadow": "none",
-  "defaultImage": "{{UDF_FilePicker.files[0]?.data || UDF_A_I.text}}",
+  "defaultImage": "{{UDF_FilePicker_Avatar.files[0]?.data || UDF_A_I.text}}",
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
@@ -38,5 +38,5 @@
   "type": "IMAGE_WIDGET",
   "version": 1,
   "widgetId": "x9xkmkghl0",
-  "widgetName": "UDF_IMAGE"
+  "widgetName": "UDF_IMAGE_Avatar"
 }

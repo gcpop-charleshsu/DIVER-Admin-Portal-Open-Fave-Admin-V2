@@ -36,7 +36,7 @@
   "mobileRightColumn": 62,
   "mobileTopRow": 33,
   "needsErrorInfo": false,
-  "onClick": "{{search_user.run()}}",
+  "onClick": "{{admin_search_user.run()}}",
   "originalBottomRow": 37,
   "originalTopRow": 33,
   "parentId": "aa2xm7huwx",

@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "68c24adbda0307624dd6baf5_848fc739-66a5-4c66-9700-789eb666915a",
-  "id": "user info_search_user",
+  "gitSyncId": "68c0444bda0307624dd6b5d4_0463522e-9f2c-4011-b69e-242b8cff0e90",
+  "id": "user info_admin_search_user",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -16,13 +16,26 @@
       "httpMethod": "GET",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "{{URLSetting.getSocialApiUrl()}}/api/v1/users/creator/{{appsmith.store.selectedUser?.creator_name}}",
+      "path": "{{URLSetting.getSocialApiUrl()}}/admin/api/v1/users/search",
       "pluginSpecifiedTemplates": [
         {
           "value": true
         }
       ],
-      "queryParameters": [],
+      "queryParameters": [
+        {
+          "key": "q",
+          "value": "{{UserInfoSearchInput.text}}"
+        },
+        {
+          "key": "page",
+          "value": "1"
+        },
+        {
+          "key": "limit",
+          "value": "20"
+        }
+      ],
       "timeoutInMillisecond": 10000
     },
     "confirmBeforeExecute": false,
@@ -37,9 +50,12 @@
     "dynamicBindingPathList": [
       {
         "key": "path"
+      },
+      {
+        "key": "queryParameters[0].value"
       }
     ],
-    "name": "search_user",
+    "name": "admin_search_user",
     "pageId": "user info",
     "runBehaviour": "AUTOMATIC",
     "userSetOnLoad": false
