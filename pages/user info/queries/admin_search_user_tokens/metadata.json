@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "68c0444bda0307624dd6b5d4_d1415fb0-846d-4d5a-a90b-f3bfb3df7d01",
-  "id": "user info_get_all_user",
+  "gitSyncId": "68c2c25be132bc4f27e73b0f_5f518fbd-8bb2-41da-bf6a-ca5ddff442b0",
+  "id": "user info_admin_search_user_tokens",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -16,26 +16,13 @@
       "httpMethod": "GET",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "{{URLSetting.getSocialApiUrl()}}/api/v1/users",
+      "path": "{{URLSetting.getSocialApiUrl()}}/admin/api/v1/tokens/creator/{{appsmith.store.selectedUser?.creator_name}}",
       "pluginSpecifiedTemplates": [
         {
           "value": true
         }
       ],
-      "queryParameters": [
-        {
-          "key": "page",
-          "value": "{{TableUserInfo.pageNo || 1}}"
-        },
-        {
-          "key": "limit",
-          "value": "20"
-        },
-        {
-          "key": "user_visibility",
-          "value": "{{UserInfoSearchVisiable.selectedOptionValue}}"
-        }
-      ],
+      "queryParameters": [],
       "timeoutInMillisecond": 10000
     },
     "confirmBeforeExecute": false,
@@ -50,17 +37,11 @@
     "dynamicBindingPathList": [
       {
         "key": "path"
-      },
-      {
-        "key": "queryParameters[0].value"
-      },
-      {
-        "key": "queryParameters[2].value"
       }
     ],
-    "name": "get_all_user",
+    "name": "admin_search_user_tokens",
     "pageId": "user info",
     "runBehaviour": "AUTOMATIC",
-    "userSetOnLoad": true
+    "userSetOnLoad": false
   }
 }

@@ -4,13 +4,16 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 20,
   "boxShadow": "none",
-  "defaultOptionValue": "",
+  "defaultOptionValue": "{{appsmith.store.visibilityFilter || ''}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -19,7 +22,11 @@
       "key": "sourceData"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
@@ -40,6 +47,7 @@
   "mobileRightColumn": 23,
   "mobileTopRow": 22,
   "needsErrorInfo": false,
+  "onOptionChange": "{{\n  (() => {\n    // Store the selected value\n    storeValue('visibilityFilter', UserInfoSearchVisiable.selectedOptionValue);\n    \n    // Don't auto-trigger queries - wait for user to press Enter or Submit\n    // Only refresh if we're already showing filtered results (no search text)\n    const searchText = UserInfoSearchInput.text;\n    if (!searchText || searchText.trim() === '') {\n      // Only for non-search mode, refresh with new filter\n      get_all_user.run();\n    }\n    // For search mode, user must press Enter or Submit to apply new filter\n  })()\n}}",
   "optionLabel": "name",
   "optionValue": "value",
   "originalBottomRow": 20,
@@ -52,7 +60,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 63,
   "serverSideFiltering": false,
-  "sourceData": "[\n  {\n    \"name\": \"none\",\n    \"value\": \"\"\n  },\n  {\n    \"name\": \"True\",\n    \"value\": \"true\"\n  },\n  {\n    \"name\": \"False\",\n    \"value\": \"false\"\n  }\n]",
+  "sourceData": "[\n  {\n    \"name\": \"All Users\",\n    \"value\": \"\"\n  },\n  {\n    \"name\": \"Visible Only\",\n    \"value\": \"true\"\n  },\n  {\n    \"name\": \"Hidden Only\",\n    \"value\": \"false\"\n  }\n]",
   "topRow": 13,
   "type": "SELECT_WIDGET",
   "version": 1,

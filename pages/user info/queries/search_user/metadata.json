@@ -41,7 +41,7 @@
     ],
     "name": "search_user",
     "pageId": "user info",
-    "runBehaviour": "AUTOMATIC",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

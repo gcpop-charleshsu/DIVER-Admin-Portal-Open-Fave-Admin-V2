@@ -1,7 +1,8 @@
 export default {
   showDetail: () => {
     storeValue('selectedUser', TableUserInfo.selectedRow);
-		search_user.run()
+		search_user.run();
+		admin_search_user_tokens.run();
     showModal(UD_Model.name);
   },
   

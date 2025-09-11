@@ -2,10 +2,10 @@ export default {
     form_reset() {
         // Clear the search fields
         UserInfoSearchInput.setValue("");
-        UserInfoSearchVisiable.setSelectedOption("none");
+        UserInfoSearchVisiable.setSelectedOption(""); // Empty value = All Users
+        storeValue('visibilityFilter', ''); // Clear stored filter
         
-        // The table should maintain its page due to maintainPageOnDataChange setting
-        // Just refresh the data
+        // Clear search results and show all users
         get_all_user.run();
     },
 
