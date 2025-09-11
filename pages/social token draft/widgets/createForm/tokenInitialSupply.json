@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 18,
   "boxShadow": "none",
-  "defaultText": "{{getToken.data.initial_collateral_amt}}",
+  "defaultText": "{{getToken.data.initial_supply_amt}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

@@ -16,7 +16,7 @@ export default {
   },
 	UpdateSubmit() {
 		// Since the RichTextEditor is in markdown mode, just use the text directly
-		const text = ModalRichTE.text;
+		const text = ModalCallingPrompt.text;
 		
 		console.log("Text to update:", text);
 		console.log("Text length:", text.length);
@@ -36,7 +36,7 @@ export default {
   },
 	CreateSubmit() {
 		// Since the RichTextEditor is in markdown mode, just use the text directly
-		const text = ModalRichTECreate.text;
+		const text = ModalCallingPromptCreate.text;
 		
 		console.log("Text to insert:", text);
 		console.log("Text length:", text.length);
