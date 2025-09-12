@@ -34,6 +34,10 @@
       "isDefault": true
     },
     {
+      "id": "registration",
+      "isDefault": false
+    },
+    {
       "id": "social token search",
       "isDefault": false
     },
@@ -46,15 +50,11 @@
       "isDefault": false
     },
     {
-      "id": "character info",
-      "isDefault": false
-    },
-    {
       "id": "user info",
       "isDefault": false
     },
     {
-      "id": "registration",
+      "id": "character info",
       "isDefault": false
     }
   ],
