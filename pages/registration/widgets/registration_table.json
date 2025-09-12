@@ -47,7 +47,7 @@
     "created_at",
     "updated_at"
   ],
-  "columnUpdatedAt": 1757464273325,
+  "columnUpdatedAt": 1757637837475,
   "columnWidthMap": {
     "creator_name": 332
   },
@@ -365,7 +365,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": false,
+      "isVisible": true,
       "label": "notes",
       "notation": "standard",
       "originalId": "notes",
